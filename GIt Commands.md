@@ -9,7 +9,7 @@ git init
 ```
 Creates a new Git repository in the current folder.
 
-### 12. Clone a Repository
+### 2. Clone a Repository
 ```bash
 git clone "repo_url"
 ```
@@ -19,13 +19,13 @@ Copies a remote repository to your local machine.
 
 ## Working with Changes
 
-### 2. Check Status
+### 3. Check Status
 ```bash
 git status
 ```
 Shows the state of the working directory and staging area.
 
-### 3. Stage Changes
+### 4. Stage Changes
 ```bash
 git add .                    # Stage all changes
 git add <filename>           # Stage specific file
@@ -33,7 +33,7 @@ git add *.js                 # Stage all JavaScript files
 ```
 Prepares changes for the next commit.
 
-### 4. Commit Changes
+### 5. Commit Changes
 ```bash
 git commit -m "commit message"
 ```
@@ -43,13 +43,13 @@ Saves the staged changes to the repository with a descriptive message.
 
 ## Remote Operations
 
-### 5. Pull Updates from Remote
+### 6. Pull Updates from Remote
 ```bash
 git pull
 ```
 Fetches and merges changes from the remote repository into your current branch.
 
-### 6. Push Changes to Remote
+### 7. Push Changes to Remote
 ```bash
 git push                     # Push to default remote branch
 git push origin main         # Push to specific remote branch
@@ -57,7 +57,7 @@ git push origin main --force # Force push (use with caution)
 ```
 Uploads local branch commits to the remote repository.
 
-### 13. View and Add Remotes
+### 8. View and Add Remotes
 ```bash
 git remote -v                                           # View current remotes
 git remote add origin https://github.com/user/repo.git # Add new remote
@@ -68,7 +68,7 @@ Manage remote repository connections.
 
 ## Viewing Information
 
-### 7. View Differences
+### 9. View Differences
 ```bash
 git diff                     # Changes between working directory and staging area
 git diff --cached            # Changes between staging area and last commit
@@ -76,7 +76,7 @@ git diff HEAD                # All changes since last commit
 ```
 Shows file changes in various contexts.
 
-### 8. View Commit History
+### 10. View Commit History
 ```bash
 git log                      # Full commit details
 git log --oneline            # Compact one-line summary per commit
@@ -90,7 +90,7 @@ git log --graph              # Visual representation of branch history
 
 ## Branch Operations
 
-### 10. Checkout Branch or Commit
+### 11. Checkout Branch or Commit
 ```bash
 git checkout <branch_name>        # Switch to existing branch
 git checkout -b <new_branch>      # Create and switch to new branch
@@ -116,7 +116,7 @@ git checkout main
 # HEAD → main → C3
 ```
 
-### 11. Switch Branch (Modern Alternative)
+### 12. Switch Branch (Modern Alternative)
 ```bash
 git switch <branch_name>     # Switch to existing branch
 git switch -c <new_branch>   # Create and switch to new branch
@@ -127,7 +127,7 @@ Modern alternative to `git checkout` for branch operations.
 
 ## Advanced Operations
 
-### 9. Reset to an Older Commit
+### 13. Reset to an Older Commit
 ```bash
 git reset --hard <commit_hash>
 ```
